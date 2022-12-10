@@ -1,23 +1,18 @@
 #include<iostream>
 using namespace std;
 class Programming{
-string s;
 public:
-Programming(){}
+Programming(){
+    cout << "I love Programming languages\n";
+}
 Programming(string str){
-    s = str;
+    cout << "i love " << str;
 }
-void printString(){
-    cout << "I love programming languages\n";
-}
-void printStatement(){
-    cout << "I love " << s;
-}
+
 };
 int main(){
 Programming string1 = Programming();
-string1.printString();
 Programming string2 = Programming("cpp");
-string2.printStatement();
-    return 0;
+
+return 0;
 }
