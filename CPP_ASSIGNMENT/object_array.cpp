@@ -20,7 +20,6 @@ int main(){
 
     employee emp[40];
     int n;
-    string y;
     cout << "\nEnter the number of Employees: ";
     cin >> n;
     for(int i=0;i<=n;i++){
