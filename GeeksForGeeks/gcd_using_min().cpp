@@ -1,4 +1,4 @@
-#include "/Users/riyarawat/Desktop/stdc++.h"
+#include<bits/stdc++.h>
 using namespace std;
 
 void display(){
