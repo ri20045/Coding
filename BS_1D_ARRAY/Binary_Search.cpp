@@ -12,8 +12,14 @@ class Solution {
   public:
     int binarysearch(int arr[], int n, int k) {
         // code here
-        for(int i=0;i<n;i++){
-            if(arr[i] == k) return {i};
+        int start = 0;
+        int end = n-1;
+        while(start <= end)
+        {
+            int mid = start +(end - start)/2;
+            if(k > arr[mid]) start = mid + 1;
+            else if(k < arr[mid]) end = mid-1;
+            else return mid;
         }
         return -1;
     }
@@ -34,6 +40,10 @@ int main() {
         Solution ob;
         int found = ob.binarysearch(arr, N, key);
         cout << found << endl;
+    }
+}
+
+// } Driver Code Ends
     }
 }
 
